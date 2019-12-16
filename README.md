@@ -29,6 +29,7 @@ If you get error for versions, install the latest available version.
 
 2. Clone the Git repository:
 ```
+  https://github.com/srikrishna3118/CORNET.git
 ```
 3. Go to the network folder and run the initial script which downloads ns-3.29, applies patches, configures and builds. This script needs to be executed only once and it may take a while to finish.
 ```
