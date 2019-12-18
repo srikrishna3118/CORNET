@@ -1,6 +1,6 @@
 # CORNET (Co-Simulation Middleware for Robotic Networks)
 
-CORNET is a a co-simulation middleware for applications involving multi-robot systems like a network of Unmanned Aerial Vehicle (UAV) systems. The framework integrates ns-3 network simulator and Ardupilot based UAV simulator Software-in-the-loop (SITL) with light weight Pub/Sub based middleware. Design framework for one-to-one correspondence between UAVs in Gazebo and nodes in NS-3 is borrowed from [paper](https://arxiv.org/pdf/1808.04967.pdf). If you find this code useful in your research, please consider citing:
+CORNET is a a co-simulation middleware for applications involving multi-robot systems like a network of Unmanned Aerial Vehicle (UAV) systems. The framework integrates ns-3 network simulator and Ardupilot based UAV simulator Software-in-the-loop (SITL) with light weight Pub/Sub based middleware. Design framework for one-to-one correspondence between UAVs in Gazebo and nodes in NS-3 is borrowed from [paper](https://arxiv.org/pdf/1808.04967.pdf)[code](https://github.com/srikrishna3118/FlyNetSim.git). If you find this code useful in your research, please consider citing:
 ```
 	@conference{@Srikrishna20,
 		title = {CORNET: A Co-Simulation Middleware for Robot Networks},
