@@ -39,7 +39,7 @@ if __name__ == "__main__":
     parser.add_argument("-i", "--instance", help="Number of UAV instances (Default: 1)",
                         type=int, default=1)
     parser.add_argument("-p", "--path", help="Path of the network simulator (NS-3)",
-                        type=str, default="~/simulation/FlyNetSim/NetSim/ns-allinone-3.29/ns-3.29")
+                        type=str, default="~/simulation/CORNET/network/ns-allinone-3.29/ns-3.29")
     parser.add_argument("-c", "--control", help="Type of Control (Default: 0): 0 - Individual, 1 - Group",
                         type=int, choices=[0, 1], default=0)
     parser.add_argument("-l", "--layout", help="Layout for multiple UAVs (Default: 0): 0 - Linear, 1 - Grid",

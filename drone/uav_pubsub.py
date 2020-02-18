@@ -220,7 +220,7 @@ class UAV:
 		logging.info("Simulated Network Delay: " + repr(delta))
 		if (gcs_t1_timestamp + delta) > gcs_t2_timestamp:
 		    time.sleep((gcs_t1_timestamp + delta) - gcs_t2_timestamp)
-		    logginf.info("Recieved data in time")
+		    logging.info("Recieved data in time")
 		elif (gcs_t1_timestamp + delta + real_time_precision_tolerance) < gcs_t2_timestamp:
 		    print("Receiving time : " + repr(gcs_t2_timestamp) + " exceeds estimated arrival time: "+ repr(gcs_t1_timestamp + delta))
 		    logging.warning("Receiving time : " + repr(gcs_t2_timestamp) + " exceeds estimated arrival time: "+ repr(gcs_t1_timestamp + delta))

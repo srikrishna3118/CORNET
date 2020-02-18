@@ -5,8 +5,7 @@ git clone https://github.com/ArduPilot/ardupilot
 cd ardupilot
 git submodule update --init --recursive
 
-cd ardupilot
-./Tools/scripts/install-prereqs-ubuntu.sh -y
+./Tools/environment_install/install-prereqs-ubuntu.sh -y
 
 ~/.profile
 

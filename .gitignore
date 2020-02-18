@@ -1,2 +1,4 @@
 network/ns-allinone-3.29
 drone/ardupilot
+.idea
+*.pyc
