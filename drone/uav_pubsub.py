@@ -7,14 +7,15 @@ from dronekit import connect, VehicleMode, LocationGlobalRelative, LocationGloba
 from pymavlink import mavutil # Needed for command message definitions
 import logging
 
-logging.basicConfig(filename='Flight.log',level=logging.DEBUG)
+logging.basicConfig(filename='Flight.log', level=logging.DEBUG)
+
 
 class UAV:
     def __init__(self, uavid, sitl_port, tel_socket, control_socket, verbose=False):
 
         self.telemetry_freq = 1
 
-        #Parameters for uav movements
+        # Parameters for uav movements
         self.set_initial_alt = 10
         self.left_right_metres = 10
         self.forward_backward_metres = 10
@@ -208,9 +209,9 @@ class UAV:
                 command = d_list[3].split(":")
                 ns_t1_timestamp = float(d_list[4])
                 ns_t2_timestamp = float(d_list[5])
-		real_time_precision_tolerance = 0.05 
+		real_time_precision_tolerance = 0.05
 
-		###### Do Synchronization between flysim and netsim ###################
+		###### Do Synchronization between GCS and NS3 ###################
 		delta = (ns_t2_timestamp - ns_t1_timestamp)/1000
 		print("GCS Send Timestamp: " + repr(gcs_t1_timestamp))
 		logging.info("GCS Send Timestamp: " + repr(gcs_t1_timestamp))
